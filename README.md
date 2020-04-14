@@ -4,7 +4,7 @@ Upgrade a package only if it is installed otherwise do nothing.
 
 |Travis|GitHub|Quality|Downloads|
 |------|------|-------|---------|
-|[![travis](https://travis-ci.com/robertdebock/ansible-role-upgrade.svg?branch=master)](https://travis-ci.com/robertdebock/ansible-role-upgrade)|[![github](https://github.com/robertdebock/ansible-role-upgrade/workflows/Ansible%20Molecule/badge.svg)](https://github.com/robertdebock/ansible-role-upgrade/actions)|[![quality](https://img.shields.io/ansible/quality/)](https://galaxy.ansible.com/robertdebock/upgrade)|[![downloads](https://img.shields.io/ansible/role/d/)](https://galaxy.ansible.com/robertdebock/upgrade)|
+|[![travis](https://travis-ci.com/robertdebock/ansible-role-upgrade.svg?branch=master)](https://travis-ci.com/robertdebock/ansible-role-upgrade)|[![github](https://github.com/robertdebock/ansible-role-upgrade/workflows/Ansible%20Molecule/badge.svg)](https://github.com/robertdebock/ansible-role-upgrade/actions)|[![quality](https://img.shields.io/ansible/quality/47894)](https://galaxy.ansible.com/robertdebock/upgrade)|[![downloads](https://img.shields.io/ansible/role/d/47894)](https://galaxy.ansible.com/robertdebock/upgrade)|
 
 ## Example Playbook
 
@@ -47,8 +47,7 @@ For verification `molecule/resources/verify.yml` run after the role has been app
   roles:
     - role: robertdebock.upgrade
       upgrade_packages:
-        - screen
-        - glibc
+        - bash
 ```
 
 Also see a [full explanation and example](https://robertdebock.nl/how-to-use-these-roles.html) on how to use these roles.

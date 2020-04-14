@@ -11,5 +11,4 @@
   roles:
     - role: ansible-role-upgrade
       upgrade_packages:
-        - screen
-        - glibc
+        - bash
