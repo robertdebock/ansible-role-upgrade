@@ -58,6 +58,12 @@ These variables are set in `defaults/main.yml`:
 ```yaml
 ---
 # defaults file for upgrade
+
+# This role can pickup a list of packages to upgrade when the package is installed:
+#   upgrade_packages:
+#     - package
+#     - screen
+#     - kernel
 ```
 
 ## Requirements
