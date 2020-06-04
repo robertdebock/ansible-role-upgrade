@@ -2,9 +2,9 @@
 
 Upgrade a package only if it is installed otherwise do nothing.
 
-|Travis|GitHub|Quality|Downloads|
-|------|------|-------|---------|
-|[![travis](https://travis-ci.com/robertdebock/ansible-role-upgrade.svg?branch=master)](https://travis-ci.com/robertdebock/ansible-role-upgrade)|[![github](https://github.com/robertdebock/ansible-role-upgrade/workflows/Ansible%20Molecule/badge.svg)](https://github.com/robertdebock/ansible-role-upgrade/actions)|[![quality](https://img.shields.io/ansible/quality/47894)](https://galaxy.ansible.com/robertdebock/upgrade)|[![downloads](https://img.shields.io/ansible/role/d/47894)](https://galaxy.ansible.com/robertdebock/upgrade)|
+|Travis|GitHub|Quality|Downloads|Version|
+|------|------|-------|---------|-------|
+|[![travis](https://travis-ci.com/robertdebock/ansible-role-upgrade.svg?branch=master)](https://travis-ci.com/robertdebock/ansible-role-upgrade)|[![github](https://github.com/robertdebock/ansible-role-upgrade/workflows/Ansible%20Molecule/badge.svg)](https://github.com/robertdebock/ansible-role-upgrade/actions)|[![quality](https://img.shields.io/ansible/quality/47894)](https://galaxy.ansible.com/robertdebock/upgrade)|[![downloads](https://img.shields.io/ansible/role/d/47894)](https://galaxy.ansible.com/robertdebock/upgrade)|[![Version](https://img.shields.io/github/release/robertdebock/ansible-role-upgrade.svg)](https://github.com/robertdebock/ansible-role-upgrade/releases/)|
 
 ## [Example Playbook](#example-playbook)
 
