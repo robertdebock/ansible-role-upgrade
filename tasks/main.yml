@@ -1,5 +1,8 @@
 ---
 # tasks file for upgrade
+- name: include assert.yml
+  include_tasks: assert.yml
+
 - name: check if package is installed
   package:
     name: "{{ item }}"

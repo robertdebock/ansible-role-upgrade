@@ -1,0 +1,16 @@
+---
+- name: test if upgrade_packages is set correctly
+  assert:
+    that:
+      - upgrade_packages | length > 0
+      - upgrade_packages is iterable
+  when:
+    - upgrade_packages is defined
+
+- name: test if item in upgrade_packages is set correctly
+  assert:
+    that:
+      - item is defined
+      - item | length > 0
+  when:
+    - upgrade_packages is defined
