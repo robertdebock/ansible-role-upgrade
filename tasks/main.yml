@@ -9,9 +9,6 @@
     state: present
   loop: "{{ upgrade_packages }}"
   check_mode: yes
-  register: upgrade_check_if_package_is_installed
-  until: upgrade_check_if_package_is_installed is succeeded
-  retries: 3
   when:
     - upgrade_packages is defined
     - upgrade_packages | length > 0
@@ -23,9 +20,6 @@
   loop: "{{ upgrade_check_if_package_is_installed.results }}"
   loop_control:
     label: "{{ item.item }}"
-  register: upgrade_upgrade_package
-  until: upgrade_upgrade_package is succeeded
-  retries: 3
   when:
     - upgrade_check_if_package_is_installed.results is defined
     - not item.changed | bool
