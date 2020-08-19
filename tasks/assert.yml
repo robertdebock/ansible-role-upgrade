@@ -4,6 +4,7 @@
     that:
       - upgrade_packages | length > 0
       - upgrade_packages is iterable
+    quiet: yes
   when:
     - upgrade_packages is defined
 
