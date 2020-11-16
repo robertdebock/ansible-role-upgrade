@@ -2,7 +2,6 @@
 - name: test if upgrade_packages is set correctly
   assert:
     that:
-      - upgrade_packages | length > 0
       - upgrade_packages is iterable
     quiet: yes
   when:
@@ -12,7 +11,6 @@
   assert:
     that:
       - item is defined
-      - item | length > 0
     quiet: yes
   loop: "{{ upgrade_packages }}"
   when:
