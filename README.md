@@ -2,9 +2,9 @@
 
 Upgrade a package only if it is installed otherwise do nothing.
 
-|Travis|GitHub|Quality|Downloads|Version|
-|------|------|-------|---------|-------|
-|[![travis](https://travis-ci.com/robertdebock/ansible-role-upgrade.svg?branch=master)](https://travis-ci.com/robertdebock/ansible-role-upgrade)|[![github](https://github.com/robertdebock/ansible-role-upgrade/workflows/Ansible%20Molecule/badge.svg)](https://github.com/robertdebock/ansible-role-upgrade/actions)|[![quality](https://img.shields.io/ansible/quality/47894)](https://galaxy.ansible.com/robertdebock/upgrade)|[![downloads](https://img.shields.io/ansible/role/d/47894)](https://galaxy.ansible.com/robertdebock/upgrade)|[![Version](https://img.shields.io/github/release/robertdebock/ansible-role-upgrade.svg)](https://github.com/robertdebock/ansible-role-upgrade/releases/)|
+|Travis|GitHub|GitLab|Quality|Downloads|Version|
+|------|------|------|-------|---------|-------|
+|[![travis](https://travis-ci.com/robertdebock/ansible-role-upgrade.svg?branch=master)](https://travis-ci.com/robertdebock/ansible-role-upgrade)|[![github](https://github.com/robertdebock/ansible-role-upgrade/workflows/Ansible%20Molecule/badge.svg)](https://github.com/robertdebock/ansible-role-upgrade/actions)|[![gitlab](https://gitlab.com/robertdebock/ansible-role-upgrade/badges/master/pipeline.svg)](https://gitlab.com/robertdebock/ansible-role-upgrade)|[![quality](https://img.shields.io/ansible/quality/47894)](https://galaxy.ansible.com/robertdebock/upgrade)|[![downloads](https://img.shields.io/ansible/role/d/47894)](https://galaxy.ansible.com/robertdebock/upgrade)|[![Version](https://img.shields.io/github/release/robertdebock/ansible-role-upgrade.svg)](https://github.com/robertdebock/ansible-role-upgrade/releases/)|
 
 ## [Example Playbook](#example-playbook)
 
@@ -50,10 +50,11 @@ These variables are set in `defaults/main.yml`:
 
 ## [Requirements](#requirements)
 
-- Access to a repository containing packages, likely on the internet.
-- A recent version of Ansible. (Tests run on the current, previous and next release of Ansible.)
+- pip packages listed in [requirements.txt](https://github.com/robertdebock/ansible-role-upgrade/blob/master/requirements.txt).
 
 ## [Status of requirements](#status-of-requirements)
+
+The following roles are used to prepare a system. You may choose to prepare your system in another way, I have tested these roles as well.
 
 | Requirement | Travis | GitHub |
 |-------------|--------|--------|
