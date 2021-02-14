@@ -1,7 +1,7 @@
 ---
 
 - name: test if upgrade_packages is set correctly
-  assert:
+  ansible.builtin.assert:
     that:
       - upgrade_packages is iterable
     quiet: yes
@@ -9,7 +9,7 @@
     - upgrade_packages is defined
 
 - name: test if item in upgrade_packages is set correctly
-  assert:
+  ansible.builtin.assert:
     that:
       - item is defined
       - item is string
