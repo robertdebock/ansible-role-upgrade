@@ -7,7 +7,7 @@
   delegate_to: localhost
 
 - name: check if package is installed
-  package:
+  ansible.builtin.package:
     name: "{{ item }}"
     state: present
   loop: "{{ upgrade_packages }}"
@@ -17,7 +17,7 @@
     - upgrade_packages | length > 0
 
 - name: upgrade package
-  package:
+  ansible.builtin.package:
     name: "{{ item.item }}"
     state: latest  # noqa 403 This task is to upgrade, latest is okay.
   loop: "{{ upgrade_check_if_package_is_installed.results }}"
