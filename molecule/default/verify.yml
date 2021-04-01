@@ -6,7 +6,7 @@
 
   tasks:
     - name: check if connection still works
-      ping:
+      ansible.builtin.ping:
 
   roles:
     - role: ansible-role-upgrade
