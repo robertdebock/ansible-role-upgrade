@@ -9,6 +9,6 @@
       ansible.builtin.ping:
 
   roles:
-    - role: ansible-role-upgrade
+    - role: robertdebock.upgrade
       upgrade_packages:
         - bash
